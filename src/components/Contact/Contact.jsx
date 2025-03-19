@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Contact.css';
 
 const ContactUs = () => {
   return (
     <div className="contact-page">
       <div className="breadcrumb">
-        <p>You are here &gt; <a href="/">Home</a> &gt; Contact Us</p>
+        <p>You are here &gt; <Link to="/">Home</Link> &gt; Contact Us</p>
       </div>
 
       <h1 className="contact-title">Contact Us</h1>
