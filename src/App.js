@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
@@ -13,7 +13,7 @@ import Login from './components/Login/Login';
 
 function App() {
   return (
-    <Router basename="/uiproject">
+    <Router>
       <div className="App">
         <Navbar />
         <Routes>
