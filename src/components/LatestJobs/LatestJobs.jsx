@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './LatestJobs.css';
 
 const LatestJobs = () => {
@@ -64,7 +65,7 @@ const LatestJobs = () => {
   return (
     <div className="latest-jobs-container">
       <div className="breadcrumb">
-        <p>You are here &gt; <a href="/">Home</a> &gt; Latest Jobs</p>
+        <p>You are here &gt; <Link to="/">Home</Link> &gt; Latest Jobs</p>
       </div>
 
       <h1>Latest Jobs</h1>

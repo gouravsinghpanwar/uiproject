@@ -20,17 +20,8 @@
 }
 
 .page-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  text-align: center;
   margin-bottom: 2rem;
-}
-
-.section-icon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
 }
 
 .page-header h1 {

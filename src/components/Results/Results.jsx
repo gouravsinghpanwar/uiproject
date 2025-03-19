@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Results.css';
 
 const Results = () => {
@@ -57,7 +58,7 @@ const Results = () => {
   return (
     <div className="results-container">
       <div className="breadcrumb">
-        <p>You are here &gt; <a href="/">Home</a> &gt; Results</p>
+        <p>You are here &gt; <Link to="/">Home</Link> &gt; Results</p>
       </div>
 
       <h1>Check Your Results</h1>

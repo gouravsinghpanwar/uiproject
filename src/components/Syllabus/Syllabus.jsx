@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Syllabus.css';
 import syllabusIcon from '../../images/syllabusicon.png';
 
@@ -101,11 +102,10 @@ const Syllabus = () => {
   return (
     <div className="syllabus-container">
       <div className="breadcrumb">
-        <p>You are here &gt; <a href="/">Home</a> &gt; Syllabus</p>
+        <p>You are here &gt; <Link to="/">Home</Link> &gt; Syllabus</p>
       </div>
 
       <div className="page-header">
-        <img src={syllabusIcon} alt="Syllabus Icon" className="section-icon" />
         <h1>Latest Exam Syllabus</h1>
       </div>
 

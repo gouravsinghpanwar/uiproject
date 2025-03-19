@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './AdmitCard.css';
 
 const AdmitCard = () => {
@@ -54,7 +55,7 @@ const AdmitCard = () => {
   return (
     <div className="admit-card-container">
       <div className="breadcrumb">
-        You are here {'>'} Home {'>'} Admit Card
+        <p>You are here &gt; <Link to="/">Home</Link> &gt; Admit Card</p>
       </div>
       
       <h1>Download Admit Card</h1>
