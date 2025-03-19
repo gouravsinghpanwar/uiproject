@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
@@ -13,7 +13,7 @@ import Login from './components/Login/Login';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/uiproject">
       <div className="App">
         <Navbar />
         <Routes>
@@ -25,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/apply" element={<ApplyNow />} />
           <Route path="/login" element={<Login />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </Router>
