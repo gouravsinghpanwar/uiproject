@@ -1,0 +1,226 @@
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.welcome-section {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.welcome-section h2 {
+  color: #333;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+.apply-now {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.apply-now:hover {
+  background-color: #c82333;
+}
+
+.job-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  max-width: 1000px;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  max-width: 1000px;
+}
+
+.quick-link-section {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  min-height: 300px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.section-icon {
+  width: clamp(25px, 4vw, 30px);
+  height: clamp(25px, 4vw, 30px);
+  object-fit: contain;
+}
+
+.quick-link-section h3 {
+  color: #333;
+  margin: 0;
+  font-size: clamp(1.1rem, 2vw, 1.2rem);
+}
+
+.quick-link-section ul {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.quick-link-section li {
+  margin: 1rem 0;
+}
+
+.result-link, .admit-card-link, .syllabus-link {
+  color: #666;
+  text-decoration: none;
+  font-size: clamp(0.85rem, 1.5vw, 0.9rem);
+  display: block;
+  padding: 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.result-link:hover, .admit-card-link:hover, .syllabus-link:hover {
+  background-color: #f8f9fa;
+}
+
+.exam-title {
+  display: block;
+  color: #1a73e8;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.result-date, .card-date, .syllabus-type {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.result-status {
+  display: inline-block;
+  color: #28a745;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+.view-more {
+  background-color: #1a73e8;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.view-more:hover {
+  background-color: #1557b0;
+}
+
+.important-info {
+  margin: 3rem auto;
+  padding: 0 1rem;
+  max-width: 1000px;
+}
+
+.important-info h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.3rem);
+}
+
+.info-items details {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.info-items summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+}
+
+.info-items p {
+  margin-top: 1rem;
+  color: #666;
+  line-height: 1.5;
+  font-size: clamp(0.85rem, 1.7vw, 0.9rem);
+}
+
+@media (max-width: 1024px) {
+  .job-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 1rem;
+  }
+
+  .welcome-section {
+    margin: 1.5rem 0;
+  }
+
+  .job-cards-container {
+    margin: 2rem 0;
+    grid-template-columns: 1fr;
+  }
+
+  .quick-links {
+    margin: 2rem 0;
+    grid-template-columns: 1fr;
+  }
+
+  .important-info {
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 0.5rem;
+  }
+
+  .info-items details {
+    padding: 0.75rem;
+  }
+}

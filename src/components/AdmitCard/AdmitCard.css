@@ -1,0 +1,284 @@
+.admit-card-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  color: #1a73e8;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.admit-card-container h1 {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.admit-card-content {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-container {
+  flex: 2;
+  min-width: 450px;
+  max-width: 600px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.form-container h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.file-input {
+  border: 1px dashed #ddd;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.photo-preview {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.photo-preview img {
+  max-width: 150px;
+  max-height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #1557b0;
+}
+
+.admit-card-display {
+  flex: 3;
+  min-width: 600px;
+}
+
+.admit-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.admit-card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #1a73e8;
+}
+
+.admit-card-header h2 {
+  color: #1a73e8;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.exam-year {
+  color: #666;
+  margin: 0.5rem 0 0 0;
+  font-size: 1.1rem;
+}
+
+.candidate-info {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.photo-section {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.candidate-photo {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.info-section {
+  flex: 1;
+}
+
+.exam-details {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.exam-details h3,
+.instructions h3 {
+  color: #1a73e8;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.info-row {
+  display: flex;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.info-row .label {
+  width: 150px;
+  color: #666;
+  font-weight: 500;
+}
+
+.info-row .value {
+  color: #333;
+  font-weight: 500;
+}
+
+.instructions ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #333;
+}
+
+.instructions li {
+  margin-bottom: 0.5rem;
+}
+
+.download-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background-color: #1557b0;
+}
+
+@media (max-width: 1200px) {
+  .admit-card-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container,
+  .admit-card-display {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media print {
+  .admit-card-container {
+    padding: 0;
+  }
+
+  .breadcrumb,
+  .form-container,
+  .download-btn {
+    display: none;
+  }
+
+  .admit-card-display {
+    width: 100%;
+  }
+
+  .admit-card {
+    box-shadow: none;
+    border: none;
+  }
+}

@@ -1,0 +1,154 @@
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  color: #1a73e8;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.contact-title {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.contact-content {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-content h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.contact-content h3 {
+  color: #666;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  border: 1px solid #e0e0e0;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #1a73e8;
+  background-color: #e3f2fd;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.info-text {
+  text-align: left;
+}
+
+.info-text h4 {
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.info-text p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.thank-you {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.thank-you p {
+  color: #dc3545;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 1rem;
+  }
+
+  .contact-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    gap: 1.5rem;
+  }
+
+  .contact-item {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .info-text {
+    text-align: center;
+  }
+}
